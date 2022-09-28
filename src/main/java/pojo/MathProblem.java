@@ -1,6 +1,7 @@
 package pojo;
 
-import java.util.ArrayList;
+
+import java.util.List;
 
 /**
  * @Author: zz
@@ -11,9 +12,9 @@ public class MathProblem {
     //题号
     private int titleNumber;
     //运算数
-    private ArrayList<String> data;
+    private List<String> data;
     //运算符号
-    private ArrayList<String> operator;
+    private List<String> operator;
     //运算结果
     private String answer;
     //题目字符串
@@ -30,19 +31,19 @@ public class MathProblem {
         this.titleNumber = titleNumber;
     }
 
-    public ArrayList<String> getData() {
+    public List<String> getData() {
         return data;
     }
 
-    public void setData(ArrayList<String> data) {
+    public void setData(List<String> data) {
         this.data = data;
     }
 
-    public ArrayList<String> getOperator() {
+    public List<String> getOperator() {
         return operator;
     }
 
-    public void setOperator(ArrayList<String> operator) {
+    public void setOperator(List<String> operator) {
         this.operator = operator;
     }
 

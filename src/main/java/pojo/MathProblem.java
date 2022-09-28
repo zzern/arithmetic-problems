@@ -62,4 +62,15 @@ public class MathProblem {
     public void setProblemString(String problemString) {
         this.problemString = problemString;
     }
+
+    @Override
+    public String toString() {
+        return "MathProblem{" +
+                "titleNumber=" + titleNumber +
+                ", data=" + data +
+                ", operator=" + operator +
+                ", answer='" + answer + '\'' +
+                ", problemString='" + problemString + '\'' +
+                '}';
+    }
 }

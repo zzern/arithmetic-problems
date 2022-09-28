@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * @Author: zz
  * @Date: 2022/09/27 22:15
- * @Description:
+ * @Description:程序运行入口
  */
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -24,9 +24,16 @@ public class Main {
         List<MathProblem> mathProblemList = arithmeticProblemGenerator.getMathProblemList(count, range);
         FileUtils.writeToFile(mathProblemList);
         System.out.println("题目生成完毕，完成题目后输入ok比对答案");
-        String next = sc.next();
-        if (next.equals("ok")){
-            FileUtils.checkAnswer();
+        while (true){
+            String next = sc.next();
+            if (next.equals("ok")){
+                FileUtils.checkAnswer();
+                System.out.println("比对完成");
+                break;
+            }else {
+                System.out.println("输入指令错误请重新输入");
+            }
         }
+
     }
 }

@@ -77,9 +77,8 @@ public class FileUtils {
                     wrongNumber.add(titleNum);
                 }
             }
-
+//              格式
 //            Correct: 5 (1, 3, 5, 7, 9)
-//
 //            Wrong: 5 (2, 4, 6, 8, 10)
             //正确题号
             StringBuilder sb = new StringBuilder();

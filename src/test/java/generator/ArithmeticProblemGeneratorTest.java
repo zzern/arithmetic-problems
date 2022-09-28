@@ -1,5 +1,6 @@
 package generator;
 
+import generator.ArithmeticProblemGenerator;
 import org.junit.Test;
 import pojo.MathProblem;
 

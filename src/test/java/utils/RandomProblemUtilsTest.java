@@ -1,6 +1,7 @@
 package utils;
 
 import org.junit.Test;
+import utils.RandomProblemUtils;
 
 import java.util.Arrays;
 
@@ -42,7 +43,11 @@ public class RandomProblemUtilsTest {
         String s = RandomProblemUtils.FalseFractionToDaiFraction("12/7");
         System.out.println(s);
     }
-
+    @Test
+    public void falseFractionToDaiFraction1() {
+        String s = RandomProblemUtils.FalseFractionToDaiFraction("12");
+        System.out.println(s);
+    }
     @Test
     public void checkFraction() {
         int i = RandomProblemUtils.checkFraction("1/2");

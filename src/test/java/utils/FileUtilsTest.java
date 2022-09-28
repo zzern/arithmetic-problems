@@ -3,6 +3,7 @@ package utils;
 import generator.ArithmeticProblemGenerator;
 import org.junit.Test;
 import pojo.MathProblem;
+import utils.FileUtils;
 
 
 import java.io.IOException;
@@ -23,5 +24,9 @@ public class FileUtilsTest {
         ArithmeticProblemGenerator arithmeticProblemGenerator = new ArithmeticProblemGenerator();
         List<MathProblem> mathProblemList = arithmeticProblemGenerator.getMathProblemList(10, 10);
         FileUtils.writeToFile(mathProblemList);
+    }
+    @Test
+    public  void checkAnswer() throws IOException {
+        FileUtils.checkAnswer();
     }
 }
